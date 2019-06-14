@@ -322,7 +322,13 @@ func main() {
 		1: "str 2",
 		2: "str 3",
 	}
-	fmt.Printf("Map: %v\n", m)
+	fmt.Printf("Literal map: %v\n", m)
+
+	m2 := make(map[int]string)
+	m2[0] = "str 1"
+	m2[1] = "str 2"
+	m2[2] = "str 3"
+	fmt.Printf("Make-ed map: %v\n", m2)
 
 	m[1] = "str 2 updated"
 	delete(m, 2)
